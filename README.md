@@ -18,7 +18,7 @@ Travis Engh
 **Configuration**
 
 ## Tags
-#Shutdown
-#Reboot
-#Restart skills
+#shutdown
+#reboot
+#restartskills
 
