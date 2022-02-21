@@ -1,4 +1,4 @@
-# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/bug.svg" card_color="#22A7F0" width="50" height="50" style="vertical-align:bottom"/> Pi Power Off
+# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/bug.svg" card_color="22A7F0" width="50" height="50" style="vertical-align:bottom"/> Pi Power Off
 Allows mycroft to shutdown and reboot on raspberry pi, as well as restart all services if needed.
 
 ## About
