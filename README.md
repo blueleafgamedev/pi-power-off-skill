@@ -4,6 +4,13 @@ Allows mycroft to shutdown and reboot on raspberry pi, as well as restart all se
 ## About
 I created this skill because i did not want to use picroft. instead, i used mycroft-core on raspbian 64 bit os. the shutdown skill that is currently installed does not utilize a command line call to sudo shutdown, sudo reboot, or bash mycroft-core/start-mycroft.sh all restart. utilizing this skill allows a user in my situation to restart mycroft's services, shutdown, and reboot their raspberry pi.
 
+## Note
+You may need to add mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot to your /etc/sudoers file. To do this, open a terminal and type the following:
+
+sudo nano /etc/sudoers
+
+When this file opens, add mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot below root in the # user privilege specification section
+
 ## Examples
 * "Shutdown"
 * "Goodnight"
