@@ -34,4 +34,6 @@ Travis Engh
 #shutdown
 #reboot
 #restartskills
+#pipower
+#pipoweroff
 
