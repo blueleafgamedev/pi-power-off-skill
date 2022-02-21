@@ -7,13 +7,13 @@ I created this skill because i did not want to use picroft. instead, i used mycr
 ## Note
 You may need to add mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot to your /etc/sudoers file. To do this, open a terminal and type the following:
 
-sudo nano /etc/sudoers
+    sudo nano /etc/sudoers
 
 When this file opens, add the following:
 
-mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot 
+    mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot 
 
-below root in the # user privilege specification section
+below root in the # user privilege specification section.
 
 **Also, the Mycroft System or Stop skill is currently interferring with this skill. Mycroft downloads that skill everytime it updates. I am in the process of figuring out a way to either block or permanently remove the System/Stop skill so my pi-power-off-skill can work on my system.**
 
