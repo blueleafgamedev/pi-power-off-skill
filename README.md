@@ -9,7 +9,11 @@ You may need to add mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot to y
 
 sudo nano /etc/sudoers
 
-When this file opens, add mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot below root in the # user privilege specification section
+When this file opens, add the following:
+
+mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot 
+
+below root in the # user privilege specification section
 
 ## Examples
 * "Shutdown"
