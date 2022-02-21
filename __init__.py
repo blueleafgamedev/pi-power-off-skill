@@ -8,7 +8,7 @@ class PiPowerOff(MycroftSkill):
     @intent_file_handler('off.power.pi.intent')
     def handle_off_power_pi(self, message):
         self.speak_dialog('off.power.pi')
-        call('sudo /sbin/shutdown', shell=True)
+        call('sudo /sbin/shutdown && bash ~/mycroft-core/stop-mycroft.sh', shell=True)
 
     @intent_file_handler('reboot.power.pi.intent')
     def handle_reboot_power_pi(self, message):
