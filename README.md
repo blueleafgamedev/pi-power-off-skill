@@ -15,6 +15,8 @@ mycroft ALL=(ALL) NOPASSWD: /sbin/shutdown,/sbin/reboot
 
 below root in the # user privilege specification section
 
+**Also, the Mycroft System or Stop skill is currently interferring with this skill. Mycroft downloads that skill everytime it updates. I am in the process of figuring out a way to either block or permanently remove the System/Stop skill so my pi-power-off-skill can work on my system.**
+
 ## Examples
 * "Shutdown"
 * "Goodnight"
