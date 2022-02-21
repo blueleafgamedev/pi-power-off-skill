@@ -13,7 +13,7 @@ class PiPowerOff(MycroftSkill):
     @intent_file_handler('reboot.power.pi.intent')
     def handle_reboot_power_pi(self, message):
         self.speak_dialog('reboot.power.pi')
-        call('sudo /sbin/reboot', shell=True)
+        call('sleep 5s && sudo /sbin/reboot', shell=True)
 
     @intent_file_handler('reset.power.pi.intent')
     def handle_reset_dialog(self, message):
