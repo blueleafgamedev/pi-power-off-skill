@@ -21,7 +21,6 @@ class PiPowerOff(MycroftSkill):
         call('sleep 5s && bash /home/tengh/mycroft-core/start-mycroft.sh all restart', shell=True)
 
 
-
 def create_skill():
     return PiPowerOff()
 
