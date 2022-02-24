@@ -8,17 +8,17 @@ class PiPowerOff(MycroftSkill):
     @intent_file_handler('off.power.pi.intent')
     def handle_off_power_pi(self, message):
         self.speak_dialog('off.power.pi')
-        call('sudo /sbin/shutdown && bash ~/mycroft-core/stop-mycroft.sh', shell=True)
+        call('sudo /sbin/shutdown && sleep 30s && bash ~/mycroft-core/stop-mycroft.sh', shell=True)
 
     @intent_file_handler('reboot.power.pi.intent')
     def handle_reboot_power_pi(self, message):
         self.speak_dialog('reboot.power.pi')
-        call('sleep 5s && sudo /sbin/reboot', shell=True)
+        call('sleep 5s && bash ~/mycroft-core/stop-mycroft.sh && sleep 25s && sudo /sbin/reboot', shell=True)
 
     @intent_file_handler('reset.power.pi.intent')
     def handle_reset_dialog(self, message):
         self.speak_dialog('reset.power.pi')
-        call('bash /home/tengh/mycroft-core/start-mycroft.sh all restart', shell=True)
+        call('sleep 5s && bash /home/tengh/mycroft-core/start-mycroft.sh all restart', shell=True)
 
 
 
